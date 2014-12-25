@@ -1,0 +1,80 @@
+<html>
+
+
+<head>
+<title>    Анкета Участника   </title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style>
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<div id="header"></div>
+<a href="index.html"><img src="glavnaya.jpg"></a><a href="games.html"><img src="games.jpg"></a><img src="clean.jpg" ><a href="comp.html"><img src="sostav.jpg"></a><a href="photo.html"><img src="gallery.jpg"></a>
+
+<marquee onmouseover=this.stop() onmouseout=this.start()><script language="javascript" type="text/javascript" src="stroka.js" > </script></marquee>
+
+<form action="mailto:example@example" name ="anketa" method = "post" enctype="text/plain">
+<p> <center><b>Анкета болельщика</b></center> </p>
+ <p><input type="text" name="LastName" value="" size="25" required />
+Фамилия*
+</p>
+ <p><input type="text" name="Name" value="" size="25" required />
+ Имя*
+</p>
+<p><input type="text" name="Age" value="" size="25" />
+Возраст
+</p>
+
+<p><input type="radio" name="Пол" value="Мужской" /> Мужчина
+<input type="radio" name="Пол" value="Женский" /> Женщина <b>:</b> Пол</p>
+<p><input type="email" name="Mail" value="" size="25" required/>
+ Эл.почта*
+</p>
+<p><select name = "Most interesting">
+<option value="Ничего интересного" selected></option>
+ <option value="Главная страница">Главная страница</option>
+ <option value="Состав команды">Состав команды</option>
+ <option value="Календарь игр">Календарь игр</option>
+ <option value="Фото команды">Фото команды</option>
+ </select> 
+  Наиболее интересный материал сайта </p>
+  
+ <p>Игрок, внесший наибольший, по вашему мнению, вклад в игру:</p>
+<p> <input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value ="Петров"/>Петров<input type="checkbox" name ="Best player" value ="Сидоров"/>Сидоров</p>
+ <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
+ <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
+ <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
+ 
+ <p> Примечания</p>
+ <p><textarea name="Comment" cols="38" rows="8" > </textarea>
+</p>
+
+<p><input type="text" name="NickName" value="" size="25" required/>
+ Псевдоним*
+</p>
+<p><input type="password" name="Password" value="" size="25" required/>
+ Пароль*
+</p>
+<p><input type="password" name="AgainPassword" value="" size="25" required/>
+ Повторите пароль*
+</p>
+<p> * - отмечены все поля, обязательные для заполнения
+</p>
+
+
+ <p><input type="submit" value="Отправить" /><input type="reset" value="Сброс">
+ </p>
+ 
+</form>
+
+<form action = "games.html">
+<p><input type="submit" value="Назад" /></p>
+</form>
+</body>
+
+
+</html>

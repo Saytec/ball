@@ -1,0 +1,79 @@
+<html>
+
+
+<head>
+
+<title>  Фото </title>
+<script language = "JavaScript">	
+
+numimg=0 
+imgslide=new Array () 
+imgslide[0]=new Image () 
+imgslide[1]=new Image () 
+imgslide[2]=new Image () 
+imgslide[3]=new Image () 
+imgslide[4]=new Image () 
+imgslide[5]=new Image ()	
+
+imgslide[0].src ="1.jpg" 
+imgslide[1].src ="2.jpg" 
+imgslide[2].src ="3.jpg" 
+imgslide[3].src ="4.jpg" 
+imgslide[4].src ="5.jpg" 
+imgslide[5].src ="6.jpg" 
+
+function dem(n) 
+
+{ 
+if (n==1) 
+{ numimg++ 
+if (numimg==6) 
+numimg=0; 
+} 
+else 
+{numimg-- 
+if (numimg== -1) 
+numimg=5; 
+} 
+document.images [0].src=imgslide [numimg].src 
+} 
+
+</script> 
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="jwplayer.js"></script>
+
+
+</head>
+
+<body>
+<div id="header"></div>
+<a href="index.html"><img src="glavnaya.jpg"></a><a href="games.html"><img src="games.jpg"></a><img src="clean.jpg" ><a href="comp.html"><img src="sostav.jpg"></a><a href="photo.html"><img src="gallery.jpg"></a>
+
+<marquee onmouseover=this.stop() onmouseout=this.start()><script language="javascript" type="text/javascript" src="stroka.js" > </script></marquee>
+ 
+ <center>
+ <h1>  Фото  </h1>
+ 
+ <img src = "1.jpg" width="500" height="400">
+ <form name=form1> 
+  <input type=button value=Назад onClick="dem(0)">
+<input type=button value=Вперед onClick="dem(1)">
+	
+</form>
+</center>
+<center>
+<h1>  Видео </h1>
+
+<embed src='player.swf' height='500' width='700'
+ allowscriptaccess='always'
+ allowfullscreen='true'
+ flashvars="&controlbar=over&file=video.mp4&image=preview.jpg&
+ plugins=viral-2d"/>
+ </center>
+</body>
+
+
+</html>
