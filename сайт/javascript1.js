@@ -1,8 +1,17 @@
 $(document).ready(function() {
 
 
-	$('body').append('<div class="popup-box" id="popup-box-1"><div class="close">X</div><div class="top"><h2>IDITE NAHUY!</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-1"><div class="close">X</div><div class="top"><center><h2>jordan!</h2><img src="glavnaya.jpg"></center></div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-2"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+		$('body').append('<div class="popup-box" id="popup-box-3"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+			$('body').append('<div class="popup-box" id="popup-box-4"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+				$('body').append('<div class="popup-box" id="popup-box-5"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+	
+	
+	
+	
 	$('body').append('<div id="blackout"></div>');
+	
 	
 	var boxWidth = 400;
 	
@@ -27,6 +36,7 @@ $(document).ready(function() {
 	}
 	
 	
+	
 	$(window).resize(centerBox);
 	$(window).scroll(centerBox);
 	centerBox();	
@@ -45,7 +55,6 @@ $(document).ready(function() {
 		/* Show the correct popup box, show the blackout and disable scrolling */
 		$('#popup-box-'+id).show();
 		$('#blackout').show();
-		$('html,body').css('overflow', 'hidden');
 		
 		/* Fixes a bug in Firefox */
 		$('html').scrollTop(scrollPos);
@@ -58,8 +67,7 @@ $(document).ready(function() {
 		var scrollPos = $(window).scrollTop();
 		/* Hide the popup and blackout when clicking outside the popup */
 		$('[id^=popup-box-]').hide(); 
-		$('#blackout').hide(); 
-		$("html,body").css("overflow","auto");
+		$('#blackout').hide();
 		$('html').scrollTop(scrollPos);
 	});
 	$('.close').click(function() { 
@@ -67,7 +75,6 @@ $(document).ready(function() {
 		/* Similarly, hide the popup and blackout when the user clicks close */
 		$('[id^=popup-box-]').hide(); 
 		$('#blackout').hide(); 
-		$("html,body").css("overflow","auto");
 		$('html').scrollTop(scrollPos);
 	});
 });
