@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$('body').append('<div class="popup-box" id="popup-box-9"><div class="close">X</div><div class="top"><img src="leikin.jpg"><h2> Михаил Лейкин</h2><h2>Амплуа:Центровой</h2><h2>Сыграно матчей:234</h2><h2>Забито очков:598</div></div>');
     $('body').append('<div class="popup-box" id="popup-box-a"><div class="close">X</div><div class="top"><img src="abamo.jpg"><h2> Виктор Амабо</h2><h2>Амплуа:Легкий форвад</h2><h2>Сыграно матчей:14</h2><h2>Забито очков:87</div></div>');
     $('body').append('<div class="popup-box" id="popup-box-b"><div class="close">X</div><div class="top"><img src="Mavashi.jpg"><h2> Михаил Петухов</h2><h2>Амплуа:Тяжелый форвад</h2><h2>Сыграно матчей:100</h2><h2>Забито очков:277</div></div>');
-    $('body').append('<div class="popup-box" id="popup-box-c"><div class="close">X</div><div class="top"><img src="stolbov.jpg"><h2> Минь Патмэ</h2><h2>Амплуа:Защитник</h2><h2>Сыграно матчей:9</h2><h2>Забито очков:30</div></div>');
+    $('body').append('<div class="popup-box" id="popup-box-c"><div class="close">X</div><div class="top"><img src="stolbov.jpg"><h2> Столбов</h2><h2>Амплуа:Защитник</h2><h2>Сыграно матчей:9</h2><h2>Забито очков:30</div></div>');
 	$('body').append('<div id="blackout"></div>');
 
 	
