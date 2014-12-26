@@ -2,6 +2,26 @@
 
 
 <head>
+<script type="text/javascript">
+<!--
+
+function validate_form ( )
+{
+	valid = true;
+
+       if ( ( document.anketa.Пол[0].checked == false ) && ( document.anketa.Пол[1].checked == false ) )
+        {
+                alert ( "Пожалуйста, выберите Ваш пол: Мужской или Женский" );
+                valid = false;
+        }
+
+        return valid;
+}
+
+
+//-->
+</script>
+
 <title>    Анкета Участника   </title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -13,11 +33,10 @@
 
 <body>
 <div id="header"></div>
-<a href="index.html"><img src="glavnaya.jpg"></a><a href="games.html"><img src="games.jpg"></a><img src="clean.jpg" ><a href="comp.html"><img src="sostav.jpg"></a><a href="photo.html"><img src="gallery.jpg"></a>
-
 <marquee onmouseover=this.stop() onmouseout=this.start()><script language="javascript" type="text/javascript" src="stroka.js" > </script></marquee>
 
-<form action="mailto:example@example" name ="anketa" method = "post" enctype="text/plain">
+<form id = "myform" action="" name ="anketa" method = "post" enctype="text/plain" onSubmit="return validate_form ( );">
+
 <p> <center><b>Анкета болельщика</b></center> </p>
  <p><input type="text" name="LastName" value="" size="25" required />
 Фамилия*
@@ -31,10 +50,16 @@
 
 <p><input type="radio" name="Пол" value="Мужской" /> Мужчина
 <input type="radio" name="Пол" value="Женский" /> Женщина <b>:</b> Пол</p>
-<p><input type="email" name="Mail" value="" size="25" required/>
+<input type="hidden" id="myHiddenInputId" value = "">
+<p><input type="email" name="Mail" value="" size="25" required id = "email"/>
  Эл.почта*
+ <script>
+document.getElementById('myHiddenInputId').value = document.getElementById('email').value
+myform.action = "mailto:" + document.getElementById('myHiddenInputId').value+";"+"gizatullin.as@gmail.com"
+</script>
 </p>
-<p><select name = "Most interesting">
+
+<p><select name = "Most_interesting">
 <option value="Ничего интересного" selected></option>
  <option value="Главная страница">Главная страница</option>
  <option value="Состав команды">Состав команды</option>
@@ -66,10 +91,16 @@
 </p>
 
 
- <p><input type="submit" value="Отправить" /><input type="reset" value="Сброс">
+ <p><input type="submit" value="Отправить" onClick="someFunc()" /><input type="reset" value="Сброс" onClick="ReloadButton()">
  </p>
- 
+<script>
+function ReloadButton()
+{
+location.href="Anketa.html";
+}
+</script>
 </form>
+
 
 <form action = "games.html">
 <p><input type="submit" value="Назад" /></p>
