@@ -14,14 +14,16 @@ function validate_form ( )
                 alert ( "Пожалуйста, выберите Ваш пол: Мужской или Женский" );
                 valid = false;
         }
-
-        return valid;
+    if(document.getElementById('p1') != document.getElementById('p2'))
+	{
+		
+        alert("Пароли неверны");
+		valid = false;
+	}
+	return valid;
 }
-
-
-//-->
 </script>
-<script type='text/javascript' src='ball.js'></script>
+
 <title>    Анкета Участника   </title>
 
 <link rel="stylesheet" type="text/css" href="style.css" />
@@ -35,7 +37,7 @@ function validate_form ( )
 <div id="header"></div>
 <marquee onmouseover=this.stop() onmouseout=this.start()><script language="javascript" type="text/javascript" src="stroka.js" > </script></marquee>
 
-<form id = "myform" action="" name ="anketa" method = "post" enctype="text/plain" onSubmit="return validate_form ( );">
+<form id = "myform" action="" name ="anketa" method = "post" enctype="text/plain" onSubmit="return validate_form ( )">
 
 <p> <center><b>Анкета болельщика</b></center> </p>
  <p><input type="text" name="LastName" value="" size="25" required />
@@ -69,10 +71,24 @@ myform.action = "mailto:" + document.getElementById('myHiddenInputId').value+";"
   Наиболее интересный материал сайта </p>
   
  <p>Игрок, внесший наибольший, по вашему мнению, вклад в игру:</p>
-<p> <input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value ="Петров"/>Петров<input type="checkbox" name ="Best player" value ="Сидоров"/>Сидоров</p>
- <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
- <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
- <p><input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов<input type="checkbox" name ="Best player" value =" Иванов"/>Иванов</p>
+<p> <input type="checkbox" name ="Best player" value =" Морж"/>
+Морж   
+  <input type="checkbox" name ="Best player" value ="Шалашов"/>
+Шалашов   
+  <input type="checkbox" name ="Best player" value ="Фролов"/>Фролов</p>
+ <p><input type="checkbox" name ="Best player" value =" Гаджиев"/>
+ Гаджиев    
+   <input type="checkbox" name ="Best player" value =" Jordan"/>
+ Jordan   
+   <input type="checkbox" name ="Best player" value =" Амабо"/>Амабо</p>
+ <p><input type="checkbox" name ="Best player" value =" Путин"/>
+ Путин   
+   <input type="checkbox" name ="Best player" value =" Савосько"/>
+ Савосько      
+   <input type="checkbox" name ="Best player" value =" Патмэ"/>Патмэ</p>
+ <p><input type="checkbox" name ="Best player" value =" Лейкин"/>Лейкин<input type="checkbox" name ="Best player" value =" Столбов"/>
+ Столбов 
+   <input type="checkbox" name ="Best player" value =" Петухов"/>Петухов</p>
  
  <p> Примечания</p>
  <p><textarea name="Comment" cols="38" rows="8" > </textarea>
@@ -81,24 +97,20 @@ myform.action = "mailto:" + document.getElementById('myHiddenInputId').value+";"
 <p><input type="text" name="NickName" value="" size="25" required/>
  Псевдоним*
 </p>
-<p><input type="password" name="Password" value="" size="25" required/>
+<p><input type="password" name="Password" value="" size="25" required id = "p1"/>
  Пароль*
 </p>
-<p><input type="password" name="AgainPassword" value="" size="25" required/>
+<p><input type="password" name="AgainPassword" value="" size="25" required id = "p2"/>
  Повторите пароль*
 </p>
+
 <p> * - отмечены все поля, обязательные для заполнения
 </p>
 
 
- <p><input type="submit" value="Отправить" onClick="someFunc()" /><input type="reset" value="Сброс" onClick="ReloadButton()">
+ <p><input type="submit" value="Отправить" onClick="someFunc()" /><input type="reset" value="Сброс">
+
  </p>
-<script>
-function ReloadButton()
-{
-location.href="Anketa.html";
-}
-</script>
 </form>
 
 
@@ -106,6 +118,6 @@ location.href="Anketa.html";
 <p><input type="submit" value="Назад" /></p>
 </form>
 </body>
-<div id="ball"><img src="ball.png"></div>
+
 
 </html>
