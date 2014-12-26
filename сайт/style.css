@@ -14,6 +14,11 @@ background-color:#f2ddc6;
 	width: 100%;
 	height: 200px;
 }
+#ball {
+position: fixed; /* фиксированная позиция */
+left: 10px; /* отступ слева */
+bottom: 10px; /* отступ снизу */
+}
 body { margin: 200 auto;
 width: 800px;
 
