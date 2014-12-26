@@ -1,2 +1,2 @@
 // Java Document
- document.write( "<font color=#cc3333>Максим хуй</font>"); 
+ document.write( "<font color=#ffffff>Dream Team –  Big Black Boots    39:31</font>"); 
