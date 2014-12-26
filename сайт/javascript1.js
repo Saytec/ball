@@ -2,15 +2,19 @@ $(document).ready(function() {
 
 
 	$('body').append('<div class="popup-box" id="popup-box-1"><div class="close">X</div><div class="top"><center><h2>jordan!</h2><img src="glavnaya.jpg"></center></div></div>');
-	$('body').append('<div class="popup-box" id="popup-box-2"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
-		$('body').append('<div class="popup-box" id="popup-box-3"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
-			$('body').append('<div class="popup-box" id="popup-box-4"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
-				$('body').append('<div class="popup-box" id="popup-box-5"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
-	
-	
-	
-	
+	$('body').append('<div class="popup-box" id="popup-box-2"><div class="close">X</div><div class="top"><h2>malyar kryt!</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-3"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-4"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-5"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-6"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');	
+	$('body').append('<div class="popup-box" id="popup-box-7"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');	
+	$('body').append('<div class="popup-box" id="popup-box-8"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');	
+	$('body').append('<div class="popup-box" id="popup-box-9"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+    $('body').append('<div class="popup-box" id="popup-box-a"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+    $('body').append('<div class="popup-box" id="popup-box-b"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
+    $('body').append('<div class="popup-box" id="popup-box-c"><div class="close">X</div><div class="top"><h2>malyar!</div></div>');
 	$('body').append('<div id="blackout"></div>');
+
 	
 	
 	var boxWidth = 400;
